@@ -70,3 +70,11 @@ CREATE TABLE IF NOT EXISTS fact_orders (
     FOREIGN KEY (id_dimDate)     REFERENCES dimdate(id_dimDate),
     FOREIGN KEY (id_dimLocation) REFERENCES dimlocation(id_dimLocation)
 );
+
+-- Optimalisasi dan Standardisasi Charset Database
+ALTER DATABASE dw_sales CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE dimcustomer CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE dimproducts CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE dimdate CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE dimlocation CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE fact_orders CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
