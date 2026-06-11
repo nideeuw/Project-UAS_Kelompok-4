@@ -28,7 +28,7 @@ Proyek ini membangun sebuah **Data Warehouse** berbasis Star Schema menggunakan 
 ## Dataset
 
 - **Nama:** Sales Data Sample
-- **Sumber:** Kaggle
+- **Sumber:** Kaggle (https://www.kaggle.com/datasets/kyanyoga/sample-sales-data)
 - **Format:** CSV
 - **Jumlah Kolom:** 25
 - **Lokasi:** `dataset/sales_data_sample.csv`
